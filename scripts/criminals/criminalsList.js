@@ -1,18 +1,31 @@
-import { Criminal } from "./criminals.js"
-import { useCriminals } from "./CriminalsProvider.js"
+import { useCriminals } from "./CriminalsProvider.js";
+import { Criminal } from "./criminals.js";
 
+const contentTarget = document.querySelector(".criminalsContainer")
+const eventHub = document.querySelector(".container")
 
-const contentElement = document.querySelector(".criminalsContainer")
+eventHub.addEventListener("crimeChosen", event => {
+
+    const criminals = useCriminals()
+    const theCrimeThatWasChosen = event.detail.chosenCrime
+
+    const guiltyCriminals = criminals.filter(criminal => {
+        if (criminal.conviction === theCrimeThatWasChosen) {
+            return true
+        }
+        return false
+    })
+    contentTarget.innerHTML = ""
+    for (const singleCriminal of guiltyCriminals) {
+        contentTarget.innerHTML += Criminal(singleCriminal)
+    }
+})
 
 
 export const criminalList = () => {
-    const criminalObjectArray = useCriminals()
+    const criminals = useCriminals()
 
-    let allCriminalsHTML = ""
-
-    for (const criminals of criminalObjectArray) {
-        allCriminalsHTML += Criminal(criminals)
-        
+    for (const singleCriminal of criminals) {
+        contentTarget.innerHTML += Criminal(singleCriminal)
     }
-    contentElement.innerHTML += allCriminalsHTML
-} 
+}

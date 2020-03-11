@@ -5,13 +5,8 @@ import { criminalList } from "./criminals/criminalsList.js"
 import { getConvictions } from "./convictions/ConvictionProvider.js"
 import  ConvictionSelect  from "./convictions/ConvictionSelect.js"
 
-getCriminals().then(()=>
+getCriminals().then(criminalList)
 
-criminalList()
-)
-
-getConvictions().then(() => {
-    ConvictionSelect()
-})
+getConvictions().then(ConvictionSelect)
 
 
