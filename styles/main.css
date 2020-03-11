@@ -1,0 +1,16 @@
+.criminalsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.criminalDetails {
+    border: 2px solid black;
+    margin: 1em;
+    padding: 1em;
+    width: 13rem;
+    height: 9rem;
+}
+
+.name {
+    font-weight: bolder;
+}
