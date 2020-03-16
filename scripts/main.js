@@ -4,7 +4,10 @@ import { criminalList } from "./criminals/criminalsList.js"
 
 import { getConvictions } from "./convictions/ConvictionProvider.js"
 import  ConvictionSelect  from "./convictions/ConvictionSelect.js"
+import NoteForm from "./notes/NoteForm.js"
 
+
+NoteForm()
 getCriminals().then(criminalList)
 
 getConvictions().then(ConvictionSelect)
