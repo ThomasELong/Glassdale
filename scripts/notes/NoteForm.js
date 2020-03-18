@@ -47,6 +47,7 @@ const render = () => {
             <input type="text" id="criminal">
         </fieldset>
         <button id="saveNote">Save Note</button>
+        
     `
 }
 
