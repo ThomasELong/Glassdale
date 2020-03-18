@@ -1,3 +1,21 @@
 .invisible {
     display: none;
 }
+
+.notesContainer {
+    display: flex;
+    flex-flow: wrap row;
+    border: 1px solid black;
+}
+
+.note {
+    border: 1px solid black;
+    margin: 1em;
+    padding: 1em;
+    
+}
+
+.notesMain {
+    display: flex;
+    flex-direction: row;
+}
