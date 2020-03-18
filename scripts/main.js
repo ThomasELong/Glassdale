@@ -9,7 +9,6 @@ import { DisplayNotesButton } from "./notes/DisplayNotesButton.js"
 import { DisplayNoteFormButton } from "./notes/DisplayNoteFormButton.js"
 import { NoteForm } from "./notes/NoteForm.js"
 import "./notes/NoteList.js"
-import { NotesList } from "./notes/NoteList.js"
 
 getCriminals().then(criminalList)
 
@@ -19,5 +18,4 @@ DisplayNotesButton()
 DisplayNoteFormButton()
 
 NoteForm()
-NotesList()
 
