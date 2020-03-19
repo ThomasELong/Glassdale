@@ -38,6 +38,7 @@ const ConvictionSelect = () => {
                 ${
                     convictionsCollection.map(singleConviction => {
                         return `<option>${singleConviction.name}</option>`
+                    
                     })
                 }
             </select>

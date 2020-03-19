@@ -1,24 +1,32 @@
-.invisible {
-    display: none;
-}
 
 
-/* 
+
 .notesContainer {
     display: flex;
     flex-flow: wrap row;
-    border: 1px solid black;
-} */
+    border-bottom: 3px solid rgb(92, 3, 3);
+}
 
 .note {
-    border: 1px solid black;
+    border: 2px solid rgb(92, 3, 3);
     margin: 1em;
     padding: 1em;
+    width: 13rem;
+    height: 9rem;
     
 }
 
 .notesMain {
     display: flex;
     flex-direction: row;
+}
+
+
+p {
+    font-size: large;
+}
+
+.invisible {
+    display: none;
 }
 

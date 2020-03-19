@@ -3,10 +3,9 @@ const eventHub = document.querySelector(".container")
 
 contentTarget.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "showNoteForm") {
-        // Create a custom event to tell any interested component that the user wants to see notes
+
         const customEvent = new CustomEvent("noteFormButtonClicked")
 
-        // Dispatch it to the eventHub
         eventHub.dispatchEvent(customEvent)
     }
 })

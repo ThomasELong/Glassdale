@@ -1,118 +1,22 @@
 {
   "notes": [
     {
-      "id": 1,
-      "text": "He shot him",
-      "date": "10/10/2010",
-      "suspect": " "
+      "noteText": "Note",
+      "criminal": "Note",
+      "timestamp": 1584646330409,
+      "id": 1
     },
     {
-      "noteText": "Test",
-      "criminal": "Tester",
-      "timestamp": 1584474669762,
+      "noteText": "Second Note",
+      "criminal": "Person",
+      "timestamp": 1584646399553,
       "id": 2
     },
     {
-      "noteText": "asdfsadf",
-      "criminal": "asdfsaf",
-      "timestamp": 1584474697371,
+      "noteText": "Third Note",
+      "criminal": "Person",
+      "timestamp": 1584646408868,
       "id": 3
-    },
-    {
-      "noteText": "saasdf",
-      "criminal": "asfasfd",
-      "timestamp": 1584474743173,
-      "id": 4
-    },
-    {
-      "noteText": "",
-      "criminal": "",
-      "timestamp": 1584474835327,
-      "id": 5
-    },
-    {
-      "noteText": "",
-      "criminal": "",
-      "timestamp": 1584474835991,
-      "id": 6
-    },
-    {
-      "noteText": "asdf",
-      "criminal": "asfd",
-      "timestamp": 1584474838975,
-      "id": 7
-    },
-    {
-      "noteText": "asdf",
-      "criminal": "asfd",
-      "timestamp": 1584474845521,
-      "id": 8
-    },
-    {
-      "noteText": "asdfasdf",
-      "criminal": "afsfsafd",
-      "timestamp": 1584474874457,
-      "id": 9
-    },
-    {
-      "noteText": "asodfiuhasoifdu",
-      "criminal": "oiahsodifhaposidf",
-      "timestamp": 1584479063012,
-      "id": 10
-    },
-    {
-      "noteText": "asodfiuhasoifdu",
-      "criminal": "oiahsodifhaposidf",
-      "timestamp": 1584479098334,
-      "id": 11
-    },
-    {
-      "noteText": "1111111111",
-      "criminal": "1111111111",
-      "timestamp": 1584544631447,
-      "id": 12
-    },
-    {
-      "noteText": "Testing",
-      "criminal": "Testing",
-      "timestamp": 1584549870032,
-      "id": 13
-    },
-    {
-      "noteText": "hghghghghghgh",
-      "criminal": "ghghghghghghghghg",
-      "timestamp": 1584556282838,
-      "id": 14
-    },
-    {
-      "noteText": "hghghghghghgh",
-      "criminal": "ghghghghghghghghg",
-      "timestamp": 1584556284498,
-      "id": 15
-    },
-    {
-      "noteText": "hghghghghghgh",
-      "criminal": "ghghghghghghghghg",
-      "timestamp": 1584556285903,
-      "id": 16
-    },
-    {
-      "noteText": "hghghghghghgh",
-      "criminal": "ghghghghghghghghg",
-      "timestamp": 1584556291272,
-      "id": 17
-    },
-    {
-      "noteText": "Note",
-      "criminal": "Note",
-      "timestamp": 1584558981821,
-      "id": 18
-    },
-    {
-      "noteText": "Note",
-      "criminal": "Note",
-      "timestamp": 1584558992377,
-      "id": 19
     }
   ]
 }

@@ -1,4 +1,5 @@
 @import "./note-styles/note.css";
+@import "./associates.css";
 
 .criminalsContainer {
     display: flex;
@@ -16,4 +17,12 @@
 .name {
     font-weight: bolder;
 }
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    margin: 3em;
+}
+
+
 
