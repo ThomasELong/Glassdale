@@ -1,8 +1,21 @@
-import { useCriminals } from "./CriminalsProvider.js";
+import { useCriminals, getCriminals } from "./CriminalsProvider.js";
 import { Criminal } from "./criminals.js";
 
 const contentTarget = document.querySelector(".criminalsContainer")
 const eventHub = document.querySelector(".container")
+
+contentTarget.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id.startsWith("associates--")) {
+        const [nothingImportant, criminalID] = clickEvent.target.id.split("--")
+
+        const showAssociatesEvent = new CustomEvent("knownAssociatesClicked", {
+            detail: {
+                chosenCriminal: criminalID
+            }
+        })
+        eventHub.dispatchEvent(showAssociatesEvent)
+    }
+})
 
 eventHub.addEventListener("crimeChosen", event => {
 
