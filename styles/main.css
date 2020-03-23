@@ -1,6 +1,12 @@
 @import "./note-styles/note.css";
 @import "./associates.css";
 
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .criminalsContainer {
     display: flex;
     flex-wrap: wrap;
