@@ -23,7 +23,6 @@ contentTarget.addEventListener("change", changeEvent => {
 })
 
 const ConvictionSelect = () => {
-    // Get all convictions from application state
     const convictions = useConvictions()
 
     const render = (convictionsCollection) => {
