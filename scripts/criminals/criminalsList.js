@@ -30,20 +30,29 @@ eventHub.addEventListener("witnessButtonClicked", customEvent => {
 
 eventHub.addEventListener("crimeChosen", event => {
 
-    const criminals = useCriminals()
+
     const theCrimeThatWasChosen = event.detail.chosenCrime
 
-    const guiltyCriminals = criminals.filter(criminal => {
-        if (criminal.conviction === theCrimeThatWasChosen) {
+    let criminalsToDisplay = useCriminals()
+
+    if (theCrimeThatWasChosen !== "0") {
+        criminalsToDisplay = criminalsToDisplay.filter(criminal => {
+            if (criminal.conviction === theCrimeThatWasChosen) {
             return true
-        }
-        return false
-    })
-    contentTarget.innerHTML = ""
-    for (const singleCriminal of guiltyCriminals) {
-        contentTarget.innerHTML += Criminal(singleCriminal)
+        } 
+            return false
+        })
     }
+    render(criminalsToDisplay)
 })
+
+const render = criminalsToRender => {
+    contentTarget.innerHTML = criminalsToRender.map(
+        (criminalObject) => {
+            return Criminal(criminalObject)
+        }
+    ).join(" ")
+}
 
 
 export const criminalList = () => {

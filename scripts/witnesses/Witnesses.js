@@ -2,21 +2,10 @@ export const Witness = witness => {
     return `
         <section class="statement">
             <header>
-                <h3>${witness.name}</h3>
+                <h3>Witness Name: ${witness.name}</h3>
             </header>
 
-            <p>${witness.statements}</p>
+            <p>Statement: ${witness.statements}</p>
         </section>
     `
 }
-
-// export const Witness = witness => {
-//     return `
-//         <section class="statement">
-//             <header>
-//                 <h3>${witness.name}</h3>
-//             </header>
-//             <p>${witness.statements}</p>
-//         </section>
-//     `
-// }

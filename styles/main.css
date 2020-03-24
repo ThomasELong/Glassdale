@@ -1,5 +1,6 @@
 @import "./note-styles/note.css";
 @import "./associates.css";
+@import "./statements.css";
 
 
 .header {
@@ -10,6 +11,7 @@
 .criminalsContainer {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .criminalDetails {
@@ -17,7 +19,7 @@
     margin: 1em;
     padding: 1em;
     width: 13rem;
-    height: 9rem;
+    height: 13rem;
 }
 
 .name {
@@ -30,5 +32,7 @@
     margin: 3em;
 }
 
-
-
+.criminalStatement {
+    display: flex;
+    flex-direction: row;
+}
