@@ -4,8 +4,6 @@
 
 
 .header {
-    display: flex;
-    justify-content: space-between;
 }
 
 .criminalsContainer {
@@ -28,11 +26,20 @@
 
 .filters {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 3em;
+    padding: 1em;
+    border: 2px solid black;
+    justify-content: space-evenly;
+    height: 20em;
 }
 
 .criminalStatement {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
     display: flex;
     flex-direction: row;
 }

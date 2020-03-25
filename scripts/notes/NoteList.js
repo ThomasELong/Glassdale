@@ -5,14 +5,8 @@ import { Note } from "./Note.js"
 const contentTarget = document.querySelector(".notesContainer")
 const eventHub = document.querySelector(".container")
 
-/*
-    State variables
-*/
 let visibility = false
 
-/*
-    Event handlers
-*/
 eventHub.addEventListener("noteStateChanged", customEvent => {
     render()
 })
