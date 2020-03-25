@@ -1,33 +1,15 @@
 {
   "notes": [
     {
-      "id": 1,
-      "noteText": "Note",
-      "criminal": "Note",
-      "timestamp": 1584646330409
-    },
-    {
       "id": 2,
       "noteText": "Second Note",
       "criminal": "Person",
       "timestamp": 1584646399553
     },
     {
-      "id": 3,
-      "noteText": "Third Note",
-      "criminal": "Person",
-      "timestamp": 1584646408868
-    },
-    {
-      "noteText": "He kilt him",
-      "criminal": "Rogelio Hills",
-      "timestamp": 1584982641942,
-      "id": 4
-    },
-    {
-      "noteText": "Does this fully work?",
-      "criminal": "Madelyn Lebsack",
-      "timestamp": 1584982689428,
+      "noteText": "Adding another note...",
+      "criminal": "About a criminal...",
+      "timestamp": 1585082715208,
       "id": 5
     }
   ]

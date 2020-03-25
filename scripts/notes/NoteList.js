@@ -1,20 +1,14 @@
-import { getNotes, useNotes } from "./NoteDataProvider.js"
+import { getNotes, useNotes, deleteNote } from "./NoteDataProvider.js"
 import { useCriminals } from "../criminals/CriminalsProvider.js"
 import { Note } from "./Note.js"
 
 const contentTarget = document.querySelector(".notesContainer")
 const eventHub = document.querySelector(".container")
 
-/*
-    State variables
-*/
 let visibility = false
 
-/*
-    Event handlers
-*/
 eventHub.addEventListener("noteStateChanged", customEvent => {
-    renderOne()
+    render()
 })
 
 eventHub.addEventListener("allNotesClicked", customEvent => {
@@ -28,7 +22,7 @@ eventHub.addEventListener("allNotesClicked", customEvent => {
     }
 })
 
-const renderOne = () => {
+const render = () => {
     if (visibility) {
         contentTarget.classList.remove("invisible")
     }
@@ -49,25 +43,18 @@ const renderOne = () => {
 }
 
 export const NotesList = () => {
-    renderOne()
+    render()
 }
 
-const renderTwo = (noteCollection, criminalCollection) => {
-    contentTarget.innerHTML = noteCollection.map(note => {
-        const relatedCriminal = criminalCollection.find(criminal => criminial.id === note.criminalID)
 
-        return `
-            <section class="note>
-                <h2>Note about ${relatedCriminal.name}</h2>
-                ${note.noteText}
-            </section>
-        `
-    })
-}
 
-const NoteList = () => {
-    const notes = useNotes()
-    const criminals = useCriminals()
+eventHub.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id.startsWith("deleteNote--")) {
+        const [nothingImportant, id] = clickEvent.target.id.split("--")
 
-    renderTwo(notes, criminals)
-}
+        deleteNote(id).then(
+            () => {
+            render (useNotes())
+        })
+    }
+})

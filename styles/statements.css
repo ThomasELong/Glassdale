@@ -1,0 +1,29 @@
+.statementContainer {
+
+}
+
+.statement {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    padding: 0.3rem 1.5rem;
+    height: 13em;
+    width: 13em;
+    margin: 1em;
+}
+
+.foregroundImg {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: auto;
+}
+
+.backgroundImg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-bottom: 8px solid brown;
+    background: lemonchiffon;
+}
